@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  ffprobe-web:
+    build: .
+    container_name: ffprobe_web
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/data
